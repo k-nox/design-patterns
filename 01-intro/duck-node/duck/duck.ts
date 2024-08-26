@@ -23,4 +23,12 @@ export abstract class Duck {
   swim(): void {
     console.log("All ducks float, even decoys!");
   }
+
+  setFlyBehaviour(fb: FlyBehaviour): void {
+    this.flyBehaviour = fb;
+  }
+
+  setQuackBehaviour(qb: QuackBehaviour): void {
+    this.quackBehaviour = qb;
+  }
 }
